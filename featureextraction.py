@@ -5,6 +5,16 @@ import librosa
 
 DATASET_PATH = "C:/Users/User/Desktop/IDP AAAAAAAA/Dataset/source_training" #change ur path here
 JSON_PATH = "data_10.json" #change ur json file name here
+
+for i, (dirpath, dirnames, filenames) in enumerate(os.walk(DATASET_PATH)):
+    if dirpath is not DATASET_PATH:
+        for f in filenames:
+            file_path = os.path.join(dirpath, f)
+            audio = AudioSegment.from_wav(file_path)
+            if audio.duration_seconds>5.0:
+                first_5_seconds = audio[:5000]
+                first_5_seconds.export(file_path, format="wav")
+                
 SAMPLE_RATE = 22050
 TRACK_DURATION = 10  # measured in seconds
 SAMPLES_PER_TRACK = SAMPLE_RATE * TRACK_DURATION #=220500
