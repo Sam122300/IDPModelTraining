@@ -20,8 +20,8 @@ from mutagen.wave import WAVE
 
 
 #s3 connect
-ACCESS_KEY_ID = 'AKIAVGXBPBYNHBWUAA67'
-ACCESS_SECRET_KEY = '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'
+ACCESS_KEY_ID = ''
+ACCESS_SECRET_KEY = ''
 BUCKET_NAME = 'idp2g7'
 REGION_NAME = 'ap-southeast-1'
 
