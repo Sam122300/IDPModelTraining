@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0978b012-623b-498f-a600-52a10fecd5ef}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>app.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="assets\images\posts\README\1aa.jpg" />
+    <Content Include="assets\images\posts\README\2aa.jpg" />
+    <Content Include="assets\images\posts\README\3aaa.jpg" />
+    <Content Include="assets\images\posts\README\3aaav.jpg" />
+    <Content Include="assets\images\posts\README\4aa.jpg" />
+    <Content Include="assets\images\posts\README\page.jpg" />
+    <Content Include="bitmoji.png" />
+    <Content Include="static\js\app.js" />
+    <Content Include="static\js\WebAudioRecorder.min.js" />
+    <Content Include="static\js\WebAudioRecorderMp3.min.js" />
+    <Content Include="static\js\WebAudioRecorderOgg.min.js" />
+    <Content Include="static\js\WebAudioRecorderWav.min.js" />
+    <Content Include="static\styles\index.css" />
+    <Content Include="static\styles\js\app.js" />
+    <Content Include="static\styles\js\WebAudioRecorder.min.js" />
+    <Content Include="static\styles\js\WebAudioRecorderMp3.min.js" />
+    <Content Include="static\styles\js\WebAudioRecorderOgg.min.js" />
+    <Content Include="static\styles\js\WebAudioRecorderWav.min.js" />
+    <Content Include="templates\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="download.py" />
+    <Compile Include="webapp.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="assets\images\" />
+    <Folder Include="assets\images\posts\" />
+    <Folder Include="assets\images\posts\README" />
+    <Folder Include="static\" />
+    <Folder Include="static\js" />
+    <Folder Include="static\styles" />
+    <Folder Include="static\styles\js" />
+    <Folder Include="templates" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
