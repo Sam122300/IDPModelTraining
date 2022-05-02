@@ -50,8 +50,8 @@ def index():
     return render_template('index.html', transcript=transcript)
 
 BUCKET_NAME = "idp2g7"
-ACCESS_KEY_ID = "AKIAVGXBPBYNMUCIMR7T"
-SECRET_ACCESS_KEY = "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"
+ACCESS_KEY_ID = ""
+SECRET_ACCESS_KEY = ""
 
 s3 = boto3.client('s3',
                     aws_access_key_id= ACCESS_KEY_ID,
